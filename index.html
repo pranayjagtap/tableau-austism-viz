@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Autism Visualization</title>
+</head>
+
+
+ <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+ <link rel="stylesheet" href="base.css">
+ 
+<div class="container">
+	<div class="jumbotron">
+		<h5>Homework #1 Tableau</h5>
+		<h1>Title: Autism Spectrum Visualization</h1> 
+	
+		<p>Visualization of Autism data using Tableau to encode features of data in order to gain insights and answers about autism diagnosis..</p> 
+		<b>Designed by Pranay Jagtap</b> 
+	</div>
+	<div  class="row" style="background-color:#E8E8E8;border-radius: 15px;">
+	<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+		<p> <b>Intrduction</b></p>
+		<p> Autism spectrum data set consists of important information about considered cases like their age, result, AQ score which is based on set of 10 questions asked to subjects,ethnicity, country among others.</p>
+		 <p>Tableau was used to encode visualizations to the selected data-set to gain insights and answer few questions about the data.<p> 
+		 <p>We try to figure out some patterns in this dataset by asking important questions around their age,ethnicity and location. Answers to these questions provide insights about where autism cases are maximum, how its diagnosis is related to age and what role ethnicity plays, if any, in autism which we  further drill down to country distribution. <p>
+		 <p> <i>For large screen width, you may hover over visualizations to zoom these images.</i></p>
+		 <p>Click <a href="https://www.kaggle.com/faizunnabi/autism-screening">here</a> to view the data set.<p>
+		</div>
+	<div class="col-lg-1"></div>	
+	</div>
+	<hr>
+	<div class="row" style="background-color:#E8E8E8;">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-6">
+   
+			<img class="media-object" height="100%" width="100%" src="./images/dv-image1.png" alt="...">
+    
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4">
+			<h6 class="media-heading">QUESTION #1</h6>
+			<p>Where is the highest proportion of autism diagnosis around the world?</p>
+			<h6 class="media-heading">ANSWER</h6>
+			<p> It was observed that maximum number of cases were seen in <b>the United States</b>.It was observed that <b>53 out of 180</b> positive cases which amounts to <b>29.44%</b> cases were seen in United States alone.<p>
+			<h6 class="media-heading">PROCESS</h6>
+			<p>We use map encoding which uses color coding to explain density of autism patients in different parts of the world.</p>
+			<p>We make use of geographical data field- Country of residence too get geographical location and then we make use color encoding on field Result with a filter of those cases which had positive diagnosis</p>
+			
+			
+		</div>
+	</div>
+ <hr>
+ 	<div class="row" style="background-color:#E8E8E8;">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-6">
+   
+			<img class="media-object" height="100%" width="100%" src="./images/dv-image2.png" alt="...">
+    
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4">
+			<h6 class="media-heading">QUESTION #2</h6>
+			<p>Does the Age affect diagnosis of autism?</p>
+				<h6 class="media-heading">ANSWER</h6>
+			<p> Thus, as age of patient increases, <b>diagnosis of autism becomes more conclusive</b> while the slope of trend line for negative cases is relatively less<p>
+			<h6 class="media-heading">PROCESS</h6>
+			<p>We try to find if age has a role to play in diagnosis of autism. In order to get an answer for this we design a scatter plot visualization along with trend lines of positive & negative cases</p>
+			<p> We take the median scores and average ages of subjects. Result indicates the screening scores for test takers with 1 being the least and 10 being most likely to have autism.
+			<p>These scores are in accordance with Autism spectrum quotient (AQ).<p>
+			
+		
+			
+		</div>
+	</div>
+ <hr>
+<div class="row" style="background-color:#E8E8E8;">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-7">
+		
+			
+				<div class="item active">
+					<img class="media-object" height="100%" width="100%" src="./images/dv-image3.png" alt="...">
+				</div>
+
+				<div class="item">
+					<img class="media-object" height="100%" width="100%" src="./images/dv-image4.png" alt="...">
+				</div>
+				
+			</div>
+		
+		
+		<div class="col-lg-4">
+			<h6 class="media-heading">QUESTION #3</h6>
+			<p>What is the role of ethnicity and country on autism?</p>
+			<h6 class="media-heading">ANSWER</h6>
+			<p>Thus, we can say that most cases of autism are seen in <b>white europeans</b> which is about <b>60.56%</b> and when we drill down to see ethnicity combined with country, highest cases are seen in <b>United States (19.44%)</b><p>
+			<h6 class="media-heading">PROCESS</h6>
+			<p>We try to understand what role does ethnicity play in autism. We further drill down to see how is this further affected by countries where these patients live.</p>
+			<p>We make use of following tree maps visualization to answer this question. As we can see, white Europeans have the highest percentage of autism cases and furthermore white europeans in United States have shown significantly larger cases of autism of about  19.44%</p>
+			
+		</div>
+	</div>
+ <hr> 	
+ <div  class="row" style="background-color:#E8E8E8;border-radius: 15px;">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-10">
+		<p> <b>Conclusion</b></p>
+		 <p>We made use of tableau to design our visualizations on Autism spectrum data set in adults. These visualization helped us in answering some important questions about data set.</p> 
+		 <p>Visualization of data, thus, has proved to be useful in extracting some insights from autism data helping us understand some of the factors that affects diagnosis of autism.</p>
+		 <p>We can conclude that based on this data set we see a direct relation between age and diagnosis of autism, we realized that concentration of positive cases are seen in the United States and it's more commonly observed in white europeans living in United States.</p>
+		</div>
+		<div class="col-lg-1"></div>
+	</div>
+<div class="row"></div>	
+</div>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+</div>
